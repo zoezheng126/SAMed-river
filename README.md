@@ -1,6 +1,6 @@
 # Segment Any Stream: Scalable Water Extent Detection with the Segment Anything Model
-This is an pytorch implementation for this [paper](https://openreview.net/forum?id=BaZZzH7EgA).
-For a general overview, please refer to this [poster](https://openreview.net/pdf?id=BaZZzH7EgA).
+This is an official pytorch implementation for this [paper](https://openreview.net/forum?id=BaZZzH7EgA).\
+For a general overview, please refer to this [poster](https://openreview.net/pdf?id=BaZZzH7EgA).\
 If you find the code or the data useful, please cite our paper:
 ```
 @inproceedings{zheng2023segment,
@@ -29,11 +29,12 @@ Please refer to [SAM](https://github.com/facebookresearch/segment-anything) for 
 * Run `bash rivertest.sh` to get test results in `outputs/LoRA_test`. Estimated time 5 mins using one Delta A40 node 
 
 # Training
+Read TIFF images and shapefile masks during data loading:
 * Run `bash rivertrain.sh` 
 * In another terminal, run `tensorboard --log-dir <model_output/your-train-session-name/log> --host your-ip-address` (please read tensorboard doc for implementation) 
-* After training, you can copy the new checkout point to checkpoints folder and update the bash command in rivertest.sh 
+* After training, you can copy the new checkout point to checkpoints folder and update the bash command in `rivertest.sh`
 
-Or preload the data into .npy files and train afterward, please read `rivertrain.sh` for more details
+Or preload the data into .npy files and train afterward, please read `rivertrain.sh` for more details:
 * Run `bash prepareDataset.sh .datasets/train SAMed_input/train_image SAMed_input/train_mask` to store original dataset into numpy form at `.datasets/train`
 * start training `bash rivertrain.sh`
 
