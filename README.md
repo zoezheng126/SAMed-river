@@ -18,16 +18,12 @@ If you find the code or the data useful, please cite our paper:
 Please refer to [SAM](https://github.com/facebookresearch/segment-anything) for basic setup.
 
 # Quick Start
-* git clone this repo \
+* Git clone this repo \
 ```git clone https://github.com/zoezheng126/SAMed-river.git```
-* checkout to development branch \
-```git checkout development```
-* conda activate SAMed (conda init with environment.yml) \
-```conda env create -f environment.yml```
-```conda activate SAMed_test```
 * Request SAMed_input dataset from Zoe (zoezheng126@hotmail.com) or download from [google drive](https://drive.google.com/drive/folders/1I36LyUu1Ad1rmoFbcPCDzz3QKWsmqUGD?usp=drive_link)
 * Move `SAMed_input` directory to the current directory
 * Download `sam_vit_b_01ec64.pth` and `LoRA8.pth` to `checkpoints` folder from [Google Drive](https://drive.google.com/drive/folders/16L5es291O221JxK5KmYK9pg55dnm9UKH?usp=sharing)
+* Activate the conda environment, ```conda activate sas```
 * Run `bash prepareDataset.sh .datasets/test SAMed_input/test_image SAMed_input/test_mask` to store original dataset into numpy form at `.datasets/test`
 * Run `bash rivertest.sh` to get test results in `outputs/LoRA_test`. Estimated time 5 mins using one Delta A40 node 
 
