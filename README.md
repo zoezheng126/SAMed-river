@@ -1,5 +1,6 @@
 # Segment Any Stream: Scalable Water Extent Detection with the Segment Anything Model
 [[`Paper`](https://openreview.net/forum?id=BaZZzH7EgA)] [[`Poster`](https://openreview.net/pdf?id=BaZZzH7EgA)]\
+
 The code of SAS is build upon [SAM](https://github.com/facebookresearch/segment-anything) and [SAMed](https://github.com/hitachinsk/SAMed), and we sincerely appreciate the contributions of the creators of these projects.\
 If you find the code or the data useful, please cite our paper:
 ```
