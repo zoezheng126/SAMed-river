@@ -1,5 +1,5 @@
 # Segment Any Stream: Scalable Water Extent Detection with the Segment Anything Model
-[[`Paper`](https://openreview.net/forum?id=BaZZzH7EgA)] [[`Poster`](https://openreview.net/pdf?id=BaZZzH7EgA)]
+[[`Paper`](https://openreview.net/pdf?id=BaZZzH7EgA)] [[`Poster`](https://danielz.ch/assets/pdf/NeurIPs_River_Bank.pdf)]
 
 Haozhen Zheng, Chenhui Zhang, Kaiyu Guan, Yawen Deng, Sherrie Wang, Bruce L. Rhoads, Andrew J Margenot, Shengnan Zhou, Sheng Wang
 
